@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Flores Amarillas by Alex Dev</title>
+    <link rel="icon" type="image/x-icon" href="Love_files/icon.png">
+    <meta name="language" content="es-ES">
+    <meta name="title" content="title">
+    <link type="text/css" rel="stylesheet" href="./Love_files/default.css">
+    <script type="text/javascript" src="./Love_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./Love_files/jscex.min.js"></script>
+    <script type="text/javascript" src="./Love_files/jscex-parser.js"></script>
+    <script type="text/javascript" src="./Love_files/jscex-jit.js"></script>
+    <script type="text/javascript" src="./Love_files/jscex-builderbase.min.js"></script>
+    <script type="text/javascript" src="./Love_files/jscex-async.min.js"></script>
+    <script type="text/javascript" src="./Love_files/jscex-async-powerpack.min.js"></script>
+    <script type="text/javascript" src="./Love_files/functions.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./Love_files/love.js" charset="utf-8"></script>
+
+    <style>
+    /* ---------- Final: foto dentro de un marco de flores amarillas ---------- */
+    #foto-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        background: rgba(40, 25, 5, 0.75);
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.4s;
+    }
+    #foto-modal.abierto { opacity: 1; }
+
+    #foto-marco {
+        position: relative;
+        padding: 34px;
+        background: #FFF6D6;
+        border: 4px solid #E8B800;
+        border-radius: 14px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        transform: scale(0.6);
+        transition: transform 0.5s;
+    }
+    #foto-modal.abierto #foto-marco { transform: scale(1); }
+
+    #foto-img {
+        display: block;
+        max-width: 80vw;
+        max-height: 65vh;
+        border: 3px solid #8B4513;
+        border-radius: 6px;
+    }
+
+    .flor-marco {
+        position: absolute;
+        pointer-events: none;
+    }
+
+    #foto-cerrar {
+        position: fixed;
+        top: 16px;
+        right: 24px;
+        font-size: 32px;
+        color: #FFF6D6;
+        cursor: pointer;
+    }
+
+    #pista {
+        display: none;
+        position: fixed;
+        right: 24px;
+        bottom: 16px;
+        font-size: 18px;
+        color: #8B4513;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        #foto-modal, #foto-marco { transition: none; }
+    }
+    </style>
+</head>
+
+   <!--
+
+Contáctame:
+
+   * Crea tus diseños sin código
+ https://comparte-amor.vercel.app/
+
+    * Invitame un café
+ https://buymeacoffee.com/alexx.dev
+
+    * Portafolio Web
+ https://alexxdev.vercel.app
+
+    * Sigueme en tiktok
+ https://www.tiktok.com/@alexx.dev?is_from_webapp=1&sender_device=pc
+ 
+    * Canal de WhatsApp
+ https://whatsapp.com/channel/0029VazQEXq90x2vIdNkrH1p
+
+ 
+   * WhatsApp: +52 5587450945
+https://wa.me/525568916053
+
+
+-->
+
+
+
+<body>
+    <div id="main">
+        <div id="error">
+            Tu navegador que estás usando no es compatible con el contenido que se va a mostrar. 
+            Por favor, usa Google (<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>) 
+            o Firefox (<a href="http://firefox.com.cn/download/">Firefox</a>)~
+        </div>
+
+        <div id="wrap">
+            <div id="text">
+                <div id="code">
+                    <span class="say">Flores Amarillas para el amor de mi vida:</span><br><br>
+                    <span class="say">Eres la razon por la cual mis dias son mejores..</span><br><br>
+                    <span class="say">Te amo y te amare para siempre :3.</span><br><br>
+                    <span class="say"><span class="space"></span> — I Love You!</span>
+                </div>
+            </div>
+            <div id="clock-box">
+                <a>Mi amor</a>
+                <a>por ti</a> comenzó hace...
+                <div id="clock"></div>
+            </div>
+
+            <canvas id="canvas" width="1100" height="680"></canvas>
+        </div>
+    </div>
+
+    <div id="pista">Toca el árbol 🌻</div>
+
+    <div id="foto-modal">
+        <span id="foto-cerrar">✕</span>
+        <div id="foto-marco">
+            <img id="foto-img" src="foto.png" alt="Las flores que te regalé">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+   <!--
+
+Contáctame:
+
+   * Crea tus diseños sin código
+ https://comparte-amor.vercel.app/
+
+    * Invitame un café
+ https://buymeacoffee.com/alexx.dev
+
+    * Portafolio Web
+ https://alexxdev.vercel.app
+
+    * Sigueme en tiktok
+ https://www.tiktok.com/@alexx.dev?is_from_webapp=1&sender_device=pc
+ 
+    * Canal de WhatsApp
+ https://whatsapp.com/channel/0029VazQEXq90x2vIdNkrH1p
+
+ 
+   * WhatsApp: +52 5587450945
+https://wa.me/525568916053
+
+
+-->
+
+</html>
